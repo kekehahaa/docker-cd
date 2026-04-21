@@ -1,0 +1,13 @@
+
+services:
+  web:
+    image: kev1cka/docker_ci:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    ports:
+      - "8000:8000"
+
+    restart: always
+    
